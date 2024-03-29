@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
@@ -11,12 +12,10 @@ export default function NavbarBottom() {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed container max-w-lg bottom-0 py-3 pb-5 px-5 flex flex-row justify-evenly items-center z-30">
+    <nav className="fixed w-full bottom-0 py-3 pb-5 px-5 flex flex-row justify-evenly items-center z-30 bg-white">
       <Link
         href="/home"
-        className={`text-center flex flex-col items-center justify-center gap-1 ${
-          pathname === "/home" ? "border-b-4 border-black p-3" : ""
-        }`}
+        className="text-center flex flex-col items-center justify-center gap-1"
       >
         <Image
           width={30}
@@ -33,9 +32,7 @@ export default function NavbarBottom() {
       </Link>
       <Link
         href="/menu"
-        className={`text-center flex flex-col items-center justify-center gap-1 ${
-          pathname === "/menu" ? "border-b-4 border-black p-3" : ""
-        }`}
+        className="text-center flex flex-col items-center justify-center gap-1"
       >
         <Image
           width={30}

@@ -16,7 +16,7 @@ export function Slider() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full py-3"
+      className="w-full py-3 px-5"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -35,10 +35,10 @@ export function Slider() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="absolute left-0 top-[9.5rem] transform -translate-y-1/2" />
-      <CarouselNext className="absolute left-10 top-[9.5rem] transform -translate-y-1/2" />
-      <span className="absolute right-0 text-blue-600 flex flex-row items-center justify-center cursor-pointer">
-        View more <ChevronRight size={20} className="text-black mt-1" />
+      <CarouselPrevious className="absolute left-5 top-[9.5rem] transform -translate-y-1/2" />
+      <CarouselNext className="absolute left-16 top-[9.5rem] transform -translate-y-1/2" />
+      <span className="absolute right-5 text-blue-600 flex flex-row items-center justify-center cursor-pointer">
+        View more <ChevronRight size={20} className="text-black" />
       </span>
     </Carousel>
   );
