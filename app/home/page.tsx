@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
         {visibleQr && (
-          <div className="absolute left-50 top-0 container max-w-lg min-h-screen bg-white z-50 flex flex-col justify-center items-center">
+          <div className="absolute left-50 top-0 w-full min-h-screen bg-white z-50 flex flex-col justify-center items-center">
             <Button
               className="text-black mt-4 rounded-full absolute top-3 right-5"
               onClick={showQr}
